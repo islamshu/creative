@@ -1,0 +1,23 @@
+.home {
+    background: url(../img/background-en.svg) no-repeat right 120px;
+}
+.floating-button {
+    transform: translateX(-110px);
+    border-radius: 0 5px 5px 0;
+}
+.hero .hero-text h2 {
+    text-transform: capitalize;
+}
+.method svg {
+    left: auto;
+    right: 0;
+    transform: scaleX(-1);
+}
+.testimonial .item i {
+    transform: scaleX(-1);
+}
+.contant-us svg {
+    left: 0;
+    right: auto;
+    transform: scaleX(-1);
+}

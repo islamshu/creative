@@ -48,7 +48,7 @@ data-open="click" data-menu="vertical-content-menu" data-col="1-column">
                 <div class="card-header border-0">
                   <div class="card-title text-center">
                     <div class="p-1">
-                      <img src="{{asset('backend/images/logo/logo-dark.png')}}" alt="branding logo">
+                      <img src="{{asset('uploads/'.get_general_value('image'))}}" width="200" height="80" alt="branding logo">
                     </div>
                   </div>
                 

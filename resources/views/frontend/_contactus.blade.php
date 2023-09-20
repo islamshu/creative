@@ -30,6 +30,9 @@
                    @foreach ($packges as $item)
                        <option value="{{ $item->title }}">{{ $item->title }}</option>
                    @endforeach
+                   @foreach ($services as $item)
+                       <option value="{{ $item->title }}">{{ $item->title }}</option>
+                   @endforeach
                    <option value="آخرى">آخرى</option>
                   </select>
                 </div>

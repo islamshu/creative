@@ -57,7 +57,7 @@ data-open="click" data-menu="vertical-content-menu" data-col="1-column">
                   <div class="card-body">
                     @include('dashboard.parts._error')
                     @include('dashboard.parts._success')
-                    <form class="form-horizontal form-simple" method="post" action="{{ route('login_dashboard_post') }}" novalidate>
+                    <form class="form-horizontal form-simple" method="post" action="{{ route('post_login') }}" novalidate>
                         @csrf
                       <fieldset class="form-group position-relative has-icon-left mb-0">
                         <input type="email" class="form-control form-control-lg input-lg" name="email" id="user-name" placeholder="ادخل الايميل"

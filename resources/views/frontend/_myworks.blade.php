@@ -1,3 +1,6 @@
+<div id="loading">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif" width="70" height="70" alt="Loading..." />
+</div>
 <section class="portfolio" id="portfolio-scroll">
     <div class="container">
         <div class="portfolio-filter">
@@ -223,12 +226,46 @@
         </div>
 
         <div class="portfolio-card wow fadeInUp" data-wow-delay="1s">
-            <div class="row portfolio-items data_work" id="data_work">
-
+            <div class="row portfolio-items data_work" id="data_work" style="height: 300px">
+                @php
+                    $pros = App\models\Project::where('section','مواقع الكترونية')->get();
+                @endphp
+                @foreach ($pros as $item)
+                <div class="portfolio-item col-lg-4 col-md-12 wow slideInUp" id=""  >
+                    <div class="card">
+                        <div class="item-img">
+                            <img src="{{ asset('uploads/'.$item->image) }}" alt="">
+                        </div>
+                        <div class="item-text">
+                            <h6 class="d-inline float-right">{{ $item->title }}  </h6>
+                            <div class="item-links d-inline float-left">
+                                @if($item->url != null)
+                                <a href="{{ $item->url }}" target="_blank" class="website"><i class="fa fa-globe"></i></a>
+                                @endif
+                                @if($item->behance_url != null)
+                                <a href="{{ $item->behance_url }}" target="_blank" class="behance"><i class="fa fa-behance"></i></a>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+                @endforeach
+                
                 {{-- @include('frontend._my_work_project') --}}
                 
 
                 
+            </div>
+            <div class="col-12">
+                <div class="see-more">
+                    <a href="{{ get_general_value('behance') }}" class="btn btn-primary" style="--x: 94.25px; --y: 0.475433349609375px;">
+                        <span>
+                            مشاهدة المزيد
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

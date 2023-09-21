@@ -17,13 +17,16 @@
             </div>
         </div>
     </div>
+  
     
 </div>
 @empty
-<div class="text-center " style="margin-right: 30%">
-<h3 >    لا يوجد اعمال مدرجة في هذا القسم
+<div class="text-center " style="margin-right: 40%">
+<h3 >   
+    <img src="https://static.thenounproject.com/png/2503986-200.png"  alt="">
 </h3>
 </div>
+
 @endforelse 
     
 

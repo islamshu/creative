@@ -110,9 +110,7 @@
     <script src="{{ asset('front/js/portfolio.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <div id="loading">
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif" width="70" height="70" alt="Loading..." />
-    </div>
+    
 
     <script>
         function showLoading() {
@@ -148,33 +146,33 @@
        
     </script>
     <script>
-        $(document).ready(function() {
-            var ajaxRequestMade = false;
+        // $(document).ready(function() {
+        //     var ajaxRequestMade = false;
     
-            $(window).scroll(function() {
-                var offset = $("#portfolio-scroll").offset().top;
+        //     $(window).scroll(function() {
+        //         var offset = $("#portfolio-scroll").offset().top;
     
-                if ($(window).scrollTop() >= offset && !ajaxRequestMade) {
-                    showLoading();
+        //         if ($(window).scrollTop() >= offset && !ajaxRequestMade) {
+        //             showLoading();
     
-                    $.ajax({
-                        url: '{{ route('retrurn_projects') }}',
-                        type: 'GET',
-                        data: {
-                            section: null
-                        },
-                        success: function(response) {
-                            ajaxRequestMade = true;
-                            setTimeout(function() {
-                                hideLoading();
-                                $("#data_work").empty();
-                                $("#data_work").append(response).show('normal');
-                            }, 1000);
-                        }
-                    });
-                }
-            });
-        });
+        //             $.ajax({
+        //                 url: '{{ route('retrurn_projects') }}',
+        //                 type: 'GET',
+        //                 data: {
+        //                     section: null
+        //                 },
+        //                 success: function(response) {
+        //                     ajaxRequestMade = true;
+        //                     setTimeout(function() {
+        //                         hideLoading();
+        //                         $("#data_work").empty();
+        //                         $("#data_work").append(response).show('normal');
+        //                     }, 1000);
+        //                 }
+        //             });
+        //         }
+        //     });
+        // });
     </script>
     <script>
         $(document).ready(function () {
@@ -208,7 +206,7 @@
             });
         });
     </script>
-    <script>
+    {{-- <script>
         $(document).ready(function () {
             $(".contact-scroll").click(function () {
                 // Calculate the offset of the target section
@@ -223,7 +221,7 @@
                 );
             });
         });
-    </script>
+    </script> --}}
     
     
 </body>

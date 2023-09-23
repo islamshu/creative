@@ -21,7 +21,7 @@
     
 </div>
 @empty
-<div class="text-center " style="margin-right: 40%">
+<div class="text-center empty " style="">
 <h3 >   
     <img src="https://static.thenounproject.com/png/2503986-200.png"  alt="">
 </h3>

@@ -40,6 +40,10 @@
     outline: none;
 }
 
+.empty {
+    margin-right: 40%
+}
+
 
 /*-------  animation  ----------*/
 
@@ -1616,6 +1620,9 @@ footer .nav li {
 }
 
 @media screen and (max-width: 480px) {
+    .empty {
+        margin-right: 20%
+    }
     .hero {
         padding-top: 50px;
     }

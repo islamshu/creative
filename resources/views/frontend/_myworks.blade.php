@@ -1,12 +1,10 @@
-<div id="loading">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif" width="70" height="70" alt="Loading..." />
-</div>
+
 <section class="portfolio" id="portfolio-scroll">
     <div class="container">
         <div class="portfolio-filter">
             <ul class="nav">
                 
-                <li onclick="get_project('مواقع الكترونية')" class="filter-item wow fadeInDown" data-wow-delay="0.6s" data-target="website">
+                <li onclick="get_project('مواقع الكترونية')" class="filter-item wow fadeInDown active" data-wow-delay="0.6s" data-target="website">
                     <div class="filter-img">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.259 25.646">
                         <g id="coding" transform="translate(0 -52.478)">
@@ -227,8 +225,9 @@
 
         <div class="portfolio-card wow fadeInUp" data-wow-delay="1s">
             <div class="row portfolio-items data_work" id="data_work" style="height: 300px">
+                
                 @php
-                    $pros = App\models\Project::where('section','مواقع الكترونية')->get();
+                    $pros = App\Models\Project::where('section','مواقع الكترونية')->get();
                 @endphp
                 @foreach ($pros as $item)
                 <div class="portfolio-item col-lg-4 col-md-12 wow slideInUp" id=""  >

@@ -1,5 +1,5 @@
 
-@forelse ( $projects as $item )
+@foreach ( $projects as $item )
 <div class="portfolio-item col-lg-4 col-md-12 wow slideInUp" id=""  >
     <div class="card">
         <div class="item-img">
@@ -20,13 +20,7 @@
   
     
 </div>
-@empty
-<div class="text-center empty " style="">
-<h3 >   
-    <img src="https://static.thenounproject.com/png/2503986-200.png"  alt="">
-</h3>
-</div>
 
-@endforelse 
+@endforeach
     
 

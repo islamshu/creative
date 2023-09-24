@@ -110,7 +110,7 @@
     <script src="{{ asset('front/js/portfolio.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <div id="loading">
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif" width="70" height="70" alt="Loading..." />
+        {{-- <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif" width="70" height="70" alt="Loading..." /> --}}
     </div>
     
 

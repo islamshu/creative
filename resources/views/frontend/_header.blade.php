@@ -121,7 +121,7 @@
                     </li> --}}
                 </ul>
                 <div class="order-inline my-2 my-lg-0">
-                    <a  class="contact-scroll btn btn-primary wow fadeInUp nav-link" data-wow-delay="0.3s"><span>طلب خدمة</span></a>
+                    <a  class="contact-scroll btn btn-primary wow fadeInUp nav-link" data-scroll="contact-scroll" data-wow-delay="0.3s"><span>طلب خدمة</span></a>
                 </div>
             </div>
         </div>

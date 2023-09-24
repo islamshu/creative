@@ -98,7 +98,7 @@ $(document).ready(function() {
     });
 
 
-    $('.menu .nav-link , .home .mobile-view .tab').click(function(e) {
+    $('.menu .nav-link , .home .mobile-view .tab order-inline').click(function(e) {
 
         e.preventDefault();
         $('html,body').animate({
@@ -106,6 +106,14 @@ $(document).ready(function() {
         }, 1000);
 
     });
+    $('.contact-scroll').click(function(e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $('#' + $(this).data('scroll')).offset().top
+        }, 1000);
+
+    });
+
 
 
     const tabs = document.querySelectorAll(".mobile-view .tab");
